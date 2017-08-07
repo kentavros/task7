@@ -1,14 +1,27 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>%TITLE%</title>
-<!-- ðÏÓÌÅÄÎÑÑ ËÏÍÐÉÌÑÃÉÑ É ÓÖÁÔÙÊ CSS -->  
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>%TITLE%</title>
 
-<!-- äÏÐÏÌÎÅÎÉÅ Ë ÔÅÍÅ -->  
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <!--<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
+    <!--[endif]-->
 </head>
 <body>
+<nav class="navbar navbar-inverse ">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand " href="#">Task 7 - Contact Form</a>
+        </div>
+    </div>
+</nav>
 <div><h2>Contact Form</h2></div>
 <div style="color: #FF0000; font-size: 15px;"><strong>%ERRORS%</strong></div>
 
@@ -17,21 +30,21 @@
 
 <form class="form-horizontal" style="width: 700px;" method="post">
 <div class="form-group">
-    <label for="nputFullName" class="col-sm-2 control-label">Full Name:</label>
+    <label for="inputFullName" class="col-sm-2 control-label">Full Name:</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="inputFullName" name="fullName" placeholder="Full Name">
+      <input type="text" class="form-control" id="inputFullName" name="fullName" value="" placeholder="Full Name">
     </div>
   </div>
 <div class="form-group">
     <label for="inputSubject" class="col-sm-2 control-label">Subject:</label>
     <div class="col-sm-10">
  <select class="form-control input" name="subject" >
-		<option selected="selected">Make a choise</option>
+		<option selected="selected" value="makeChoise">Make a choise</option>
 		<option value="funny">Funny theme</option>
 		<option value="notFunny" >Not funny theme</option>
 		<option value="vvFunny">Very Very funny theme</option>
 
-</select>       
+</select>
   </div>
   </div>
   <div class="form-group">
@@ -54,6 +67,14 @@
 </form>
 
 
+
+<footer class="modal-footer navbar-inverse">
+    <div class="container">
+        <a class="navbar-brand" style="float: right" href="#">Task 7 - end</a>
+    </div>
+</footer>
+<script src="js/bootstrap.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 <!-- ðÏÓÌÅÄÎÑÑ ËÏÍÐÉÌÑÃÉÑ É ÓÖÁÔÙÊ JavaScript -->  
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
