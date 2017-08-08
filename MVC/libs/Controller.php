@@ -10,10 +10,8 @@ class Controller
 		    $this->model = new Model();
 			$this->view = new View(TEMPLATE);	
 				
-			if(isset($_POST['email']))
+			if($_SERVER['REQUEST_METHOD'] == 'POST')
             {
-
-                echo "YES POST EMAIL YYY!!!";
 				$this->pageSendMail();
 			}
 			else
