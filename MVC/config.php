@@ -3,7 +3,7 @@
 define('TEMPLATE', 'templates/index.php');
 
 //email for send
-define ('EMAIL_TO', 'assh4884@gmail.com');
+define ('EMAIL_TO', 'vpavlov@geeksforless.net');
 
 //Thems for select menu
 define('THEM_0', 'Make a choise');

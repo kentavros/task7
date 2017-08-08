@@ -175,8 +175,10 @@ class Model
      * @return bool
      */
 	public function sendEmail()
-	{
-	    $msg = 'Message: ' . $this->msgProp . "\r\n";
+    {
+        date_default_timezone_set('Europe/Kiev');
+        $msg = 'From: '.$this->fullNameProp."\r\n";
+	    $msg .= 'Message: ' . $this->msgProp . "\r\n";
 	    $msg .= "\r\n".'IP-adress: '. $_SERVER['REMOTE_ADDR']. "\r\n";
 	    $msg .= 'Date and time: '.date("Y-m-d H:i:s");
 
